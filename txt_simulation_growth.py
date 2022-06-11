@@ -5,7 +5,7 @@ import pandas as pd
 st.title('Monte Carlo simulation for bacterial growth')
 st.write("Simulation")
 
-E_N0 = st.number_input('Mean_N0',value=1)
+E_N0 = st.number_input('Mean_N0',value=10)
 N_stop = st.number_input('N_stop',value=10**3)
 rep = st.number_input('repetition',value=100)
 Lag = st.number_input('Lag',value=1.45)
