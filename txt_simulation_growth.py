@@ -1,20 +1,17 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 st.title('Monte Carlo simulation for bacterial growth')
 st.write("Simulation")
 
-E_N0 = st.number_input('Mean_N0',value=10)
+E_N0 = st.number_input('N0',value=10)
 N_stop = st.number_input('N_stop',value=10**3)
-rep = st.number_input('repetition',value=100)
+rep = st.number_input('Repetition',value=100)
 Lag = st.number_input('Lag',value=1.45)
 mu = st.number_input('Mu_max',value=0.86)
-st.write('Lag is ', Lag,'Mu_max', mu)
-
-
-import matplotlib.pyplot as plt
-import numpy as np
+st.write('N0 is', E_N0,'Lag is ', Lag,'Mu_max is', mu)
 
 
 fig, ax = plt.subplots()
@@ -31,3 +28,6 @@ ax.set_ylabel("Cell counts [$\log_{10}$CFU]", fontsize = 16)
 ax.set_xlabel('Time [h]', fontsize=16, color='k')
 ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
+
+st.write('Reference')
+st.write('Application of growth rate from kinetic model to calculate stochastic growth of a bacteria population at low contamination level')
