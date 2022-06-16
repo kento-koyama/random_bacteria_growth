@@ -30,4 +30,4 @@ ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
 
 st.write('## Reference')
-st.write('Koyama, K., Hiura, S., Abe, H., Koseki, S. Application of growth rate from kinetic model to calculate stochastic growth of a bacteria population at low contamination level, 2021, Journal of Theoretical Biology, 525, 21, 110758 [10.1016/j.jtbi.2021.110758](https://10.1016/j.jtbi.2021.110758)')
+st.write('Koyama, K., Hiura, S., Abe, H., Koseki, S. Application of growth rate from kinetic model to calculate stochastic growth of a bacteria population at low contamination level, 2021, Journal of Theoretical Biology, 525, 21, 110758 [10.1016/j.jtbi.2021.110758](https://doi.org/10.1016/j.jtbi.2021.110758)')
