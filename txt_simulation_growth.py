@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.title('Monte Carlo simulation for bacterial growth')
-st.write("Simulation")
+st.write("## Simulation")
 
 E_N0 = st.number_input('N0',value=10)
 N_stop = st.number_input('N_stop',value=10**3)
@@ -29,5 +29,5 @@ ax.set_xlabel('Time [h]', fontsize=16, color='k')
 ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
 
-st.write('Reference')
+st.write('## Reference')
 st.write('Application of growth rate from kinetic model to calculate stochastic growth of a bacteria population at low contamination level')
