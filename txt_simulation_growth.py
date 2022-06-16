@@ -9,9 +9,9 @@ st.write("Simulation")
 E_N0 = st.number_input('N0',value=10)
 N_stop = st.number_input('N_stop',value=10**3)
 rep = st.number_input('Repetition',value=100)
-Lag = st.number_input('Lag',value=1.45)
-mu = st.number_input('Mu_max',value=0.86)
-st.write('N0 is', E_N0,'Lag is ', Lag,'Mu_max is', mu)
+Lag = st.number_input('Lag time',value=1.45)
+mu = st.number_input('µ\_max',value=0.86)
+st.write('N0 is', E_N0,'Lag time is ', Lag,'µ\_max is', mu)
 
 
 fig, ax = plt.subplots()
