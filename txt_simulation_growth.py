@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 st.title('Monte Carlo simulation for bacterial growth')
 st.write("## Simulation")
 
-E_N0 = st.number_input('N0',value=10)
-N_stop = st.number_input('N_stop',value=10**3)
-rep = st.number_input('Repetition',value=100)
+E_N0 = st.number_input('N0',value=10, min_value=1, max_value=10**3)
+N_stop = st.number_input('N_stop',value=10**3, min_value=1, max_value=10**3)
+rep = st.number_input('Repetition',value=100, min_value=1, max_value=10**3)
 Lag = st.number_input('Lag time',value=1.45)
 mu = st.number_input('µmax',value=0.86)
 st.write('N0 is', E_N0,'Lag time is ', Lag,'µmax is', mu)
