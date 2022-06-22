@@ -27,9 +27,9 @@ for z in range(rep):
         division_time[i + 1] = sum(interval_of_time_to_division[:i]) + Lag
     ax.plot(division_time, np.log10(Number_of_cell), drawstyle = 'steps-post')
     box.append(division_time)
-ax.set_ylabel("Cell counts [$\log_{10}$CFU]", fontsize = 16)
-ax.set_xlabel('Time [h]', fontsize=16, color='k')
-ax.tick_params(labelsize=16, direction='out')
+ax.set_ylabel("Cell counts [$\log_{10}$CFU]", fontsize = 14)
+ax.set_xlabel('Time [h]', fontsize=14, color='k')
+ax.tick_params(labelsize=14, direction='out')
 st.pyplot(fig)
 
 df = pd.DataFrame(box)
